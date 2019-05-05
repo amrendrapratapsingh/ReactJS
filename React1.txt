@@ -1,0 +1,31 @@
+    *****What is React*******16.5.2******
+
+*)Open Sorce library for Building User Interface.
+*)Not a framework
+*)Focus on UI
+*)Rich Ecosystem 
+*)Rich Interface
+
+******Why Learn React***********
+*)Created and Maintained By Facebook
+*)More than 100k starts on Github.
+*)Huge Community.
+*)Component Based Architectures.
+
+
+
+******React is declaratives****
+*)Tell React what you want and react will build 
+the actual UI.
+*)React will handle efficiently updating and rendering of the Components.
+*)DOM updates are handles gracefully in react.
+
+
+  ***Prerequisites*****
+
+*)HTML,CSS and JavaScript fundamental.
+*)ES6
+*)JavaScript-'this' keyword,filter,map and reduce.
+
+*)ES6- let & const , arrow function ,template
+literals,default parameters,object literals,rest and spread operator and destructuring assignment.
