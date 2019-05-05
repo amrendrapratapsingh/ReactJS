@@ -1,0 +1,33 @@
+Functional Components is a javascript Function.
+which accespt the props as Propertis and return 
+the HTML(JSX).
+
+1)Greet.js
+
+import React from 'react'
+
+
+//function Test(){
+  //  return <h2>Hii Singh</h2>
+//}
+
+const Test = () => <h1>Hello Pratap</h1> // arrow Functions
+
+export default Test;
+
+2)App.js
+
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+import Greet from './components/Greet';
+
+function App() {
+  return (
+    <div className="App">
+    <Greet/>
+    </div>
+  );
+}
+
+export default App;

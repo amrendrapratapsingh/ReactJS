@@ -1,0 +1,19 @@
+  ********For React two things are required**********************
+1)Node js.
+2)text editor.
+
+
+*****Create-react-app*******
+
+
+1)first Methods:
+
+npx create-react-app <project_name>
+
+npx package runner
+
+2)Second Method:
+npm install create-react-app -g
+create-react-app <project_name>
+
+where create-react-app is the Package

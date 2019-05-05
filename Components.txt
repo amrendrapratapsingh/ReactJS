@@ -1,0 +1,33 @@
+******Components*****************************
+*)Components are building block of any react applications.
+->Components describes a part of the User Interface.
+->They are re-usable and can be nested inside 
+other Components. 
+
+**->Components are Two Types:
+1)Stateless Functional Components.
+2)Stateful class Components.
+
+
+
+
+
+
+
+*****Components Types***********
+
+*)Stateless Functional Components
+ex:
+function Welcome(props) {
+return <h1>Hello, {props.name}</h1>;
+}
+
+*)StateFul CLass Component
+->Class extending Component CLass.
+->render method returing HTML.
+ex:
+Class Welcome extends React.Component {
+	render() {
+     return <h1>Hello .{this.props.name}</h1>
+}
+}

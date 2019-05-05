@@ -1,0 +1,21 @@
+ *******Folder Structure******************
+
+*)node_modules:contains all the Depedency Install and Package .
+*)Public:contains the three files.
+1)favicon.ico
+2)index.html
+3)mainfest.json:concerned with Progressive Apps.
+
+
+****when we write the npm start then index.html serve
+where index.html contains the root Dom Node
+
+*)src
+
+*).gitignore
+*)package-lock.json
+*)package.json
+*)README.md
+package.json:-contains the dependency and script required for the Projects
+
+****flow of code :first render Index.html then got to index.js then go to App.js******
