@@ -1,0 +1,17 @@
+****Difference Between Functional and Class Components****
+
+**->Functional Components
+1)Simple Function
+2)Use Function components as much as Possible
+3)Absence of 'this' keyword.
+4)Solution without using state
+5)Mainly responsible for the UI
+6)Stateless/Dumb/Presentational
+
+
+**->CLass Components****
+1)More features rich.
+2)Maintain their own private data -state.
+3)Complex UI Logic.
+4)Provide lifecycle Hooks.
+5)Stateful/smart/Container.
