@@ -1,0 +1,30 @@
+         *******************What is JSX*****************
+1)JavaScript XML (JSX) - Extension to the JavaScript language syntax.
+
+2)Write XML-like Code for Elements and Components.
+
+3)JSX tags have a tag name , attribute and children
+
+4)JSX is not necessary to write the React Applications.
+
+5)JSX make your react code simpler and elegant.
+
+6)JSX ultimately transpiles to pue JavaScript
+which is understood by the Browser.
+
+
+**)Without using JSX we can create the React Applications , by using createElement()method , in which we can pass three Parameter , where as first Parameter is our element
+and second Parameter is option Property i.e null and third is our text msg.at last at the
+place of null parameter , we can pass the Object means null Parameter is basically object
+of key value press that will be applied to elements.
+
+   *******JSX difference**********
+
+class ->className
+
+for ->htmlFor
+
+camelCase property naming convention
+
+onclick ->onClick
+tabindex ->tabIndex
