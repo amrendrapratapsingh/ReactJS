@@ -1,0 +1,31 @@
+                    ************************CONTEXT*********************
+
+*)Context provides a way to pass data through the components tree without 
+having to pass props down manually at every level. 
+
+in some props probelms are come
+1)such as language preference
+2)UI theme
+3)Authenticated user
+
+
+
+********************Context API**********************
+
+1)Create the Context.
+2)Provide a context Value.(By using the Provider Components)
+3)Consume the context value. (By using the Consumer Components)
+
+Note:Only decedent Component consume its.(place is important)
+
+1)Also set the default values.(React.createContext('Amrendra'))
+
+
+****There are two limitation with contextType(By using the context we can also consume context value)
+1)it works with only Class Components.
+2)you can only subscribe  single context by contextType.
+2)Context type (By using the contextType we can also consume the Context value)
+
+synatx : class.contextType = contextName
+
+Note: if our application supports the public class syntax
