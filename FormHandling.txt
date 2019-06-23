@@ -1,0 +1,23 @@
+                 ******************Form***********************
+
+1)The Form element whose value is controlled by react is called the Controlled components.
+
+2)event is passed itself when using the event by using this event we can extract value of
+ elements. (event.target.value)
+
+ex :  
+        handleChange = (event) => {
+                                 this.setState({
+                                 topic:event.target.value
+                                 })
+                                 }
+
+1)Add the Html elements.
+2)Assign the  Components State  to the element value.
+3)update the state by using the events(onChange).
+
+
+*-)event.preventDefault() => is used for prevent the default behaviour of Form Submissions.
+
+
+
