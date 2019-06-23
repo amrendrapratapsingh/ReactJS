@@ -1,0 +1,97 @@
+   *****************Index as key**********************
+
+Note-)For many cases index as key used for list rendering , when doesnot have id.
+
+Note-))When to use index as key ??..
+
+1)The items in your list do not have a unique id.
+
+2)The list is a static list and will not change.
+
+3)The list will never be reorderd or filtered.
+
+
+
+1)App.js
+
+import React from 'react';
+//import logo from './logo.svg';
+import './App.css';
+//import Greet from './components/Greet';
+//import Welcome from './components/Welcome';
+//import Hello from './components/Hello';
+//import UserGreeting from './components/UserGreeting'
+//import Stylesheet from './components/Stylesheet'
+//import { UserProvider } from './components/UserContext'
+//import ComponentC from './components/ComponentC'
+//import Inline from './components/Inline'
+//import './appStyles.css';
+//import styles from './appStyles.module.css';
+//import Form from './components/Form'
+//import LifecycleC from './components/LifecycleC'
+//import LifecycleB from './components/LifecycleB'
+//import FragmentDemo from './components/FragmentDemo'
+//import Table from './components/Table'
+//import Purecomponent from './components/Purecomponent'
+//import ParentComponent from './components/ParentComponent';
+//import RefsDemo from './components/RefsDemo';
+//import ClickCounter from './components/ClickCounter;
+//import NameList2 from './components/NameList2';
+import NameList from './components/NameList';
+
+function App() {
+  return (
+    <div className="App">
+      <NameList/>
+      {/*<NameList2 />*/}
+    {/*<ClickCounter />*/}
+    {/*<RefsDemo/>*/}
+    {/*<ParentComponent/>*/}
+    {/*<Table/>*/}
+    {/*<FragmentDemo />*/}
+    {/*<LifecycleC />*/}
+      {/*<Form/>*/}
+    {/*<h1 className='error'>Error</h1>*/}
+    {/*<h1 className={styles.success}>Success</h1>*/}
+  {/*<Inline/>*/}
+    {/*<Stylesheet primary={false}/>*/}
+    {/*<Greet name="Angular" heroname="Google">*/}
+    {/*</Greet><p>This is from Children</p>*/}
+    {/*</Greet>*/}
+    {/*<Greet name="React" heroname="Facebook"/>*/}
+    {/*<Greet name="Redux"/>*/}
+    {/*<Welcome/>*/}
+    {/*<Hello/>*/}
+    {/*<UserGreeting/>*/}
+      
+    {/*<UserProvider value="Amrendra">*/}
+
+    {/*<ComponentC />*/}   
+    {/*</UserProvider>*/}
+    </div>
+  )
+}
+
+export default App;
+
+
+
+2)Namelist.js
+
+import React from 'react'
+
+function NameList() {
+
+    const names = ['Bruce','Clark','Diana','Bruce'];
+    const namesList =  names.map((name,index)=> <h1 key={index}>{index}{name} </h1>)
+    return (
+        <div>
+            {
+               namesList
+            }
+        </div>
+    )
+}
+
+export default NameList
+
