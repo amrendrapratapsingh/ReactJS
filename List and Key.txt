@@ -1,0 +1,113 @@
+   *******************Key Prop******************
+
+1)A "key" prop is a special string attributes you need to include when creatings lists of elements.
+
+2) Keys give the elements a stable identity.
+
+3)Keys help React identify which items have changed are added or are removed.
+
+4)Help in efficient update of  user interface.
+
+Note**-)Key Prop is not accessiable in the Child Components.
+
+
+
+1)App.js
+
+import React from 'react';
+//import logo from './logo.svg';
+import './App.css';
+//import Greet from './components/Greet';
+//import Welcome from './components/Welcome';
+//import Hello from './components/Hello';
+//import UserGreeting from './components/UserGreeting'
+//import Stylesheet from './components/Stylesheet'
+//import { UserProvider } from './components/UserContext'
+//import ComponentC from './components/ComponentC'
+//import Inline from './components/Inline'
+//import './appStyles.css';
+//import styles from './appStyles.module.css';
+//import Form from './components/Form'
+//import LifecycleC from './components/LifecycleC'
+//import LifecycleB from './components/LifecycleB'
+//import FragmentDemo from './components/FragmentDemo'
+//import Table from './components/Table'
+//import Purecomponent from './components/Purecomponent'
+//import ParentComponent from './components/ParentComponent';
+//import RefsDemo from './components/RefsDemo';
+//import ClickCounter from './components/ClickCounter;
+//import NameList2 from './components/NameList2';
+import NameList from './components/NameList';
+
+function App() {
+  return (
+    <div className="App">
+      <NameList/>
+      {/*<NameList2 />*/}
+    {/*<ClickCounter />*/}
+    {/*<RefsDemo/>*/}
+    {/*<ParentComponent/>*/}
+    {/*<Table/>*/}
+    {/*<FragmentDemo />*/}
+    {/*<LifecycleC />*/}
+      {/*<Form/>*/}
+    {/*<h1 className='error'>Error</h1>*/}
+    {/*<h1 className={styles.success}>Success</h1>*/}
+  {/*<Inline/>*/}
+    {/*<Stylesheet primary={false}/>*/}
+    {/*<Greet name="Angular" heroname="Google">*/}
+    {/*</Greet><p>This is from Children</p>*/}
+    {/*</Greet>*/}
+    {/*<Greet name="React" heroname="Facebook"/>*/}
+    {/*<Greet name="Redux"/>*/}
+    {/*<Welcome/>*/}
+    {/*<Hello/>*/}
+    {/*<UserGreeting/>*/}
+      
+    {/*<UserProvider value="Amrendra">*/}
+
+    {/*<ComponentC />*/}   
+    {/*</UserProvider>*/}
+    </div>
+  )
+}
+
+export default App;
+
+
+2)NameList2.js
+
+
+import React from 'react';
+import Refactorjsx from './Refactorjsx'
+
+function NameList2() {
+
+    const persons = [
+        {
+            id:1,
+            name:"Amrendra",
+            skill:"React"
+        },
+        {
+            id:2,
+            name:"Pratap",
+            skill:"Angular"
+        },
+        {
+            id:3,
+            name:"Yuvi",
+            skill:"vue"
+        }
+    ]
+    const personList = persons.map(person => key = <Refactorjsx key={person.id} person={person}/>)
+    return (
+        <div>
+            {
+              personList  
+            }
+        </div>
+    )
+}
+
+export default NameList2
